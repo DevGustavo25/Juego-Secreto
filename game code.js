@@ -74,7 +74,7 @@ function reiniciar_juego() {
 }
 
 function condiciones_iniciales() {
-    asignar_texto('h1',"Juego del número secreto!");
+    asignar_texto('h1',"¡Juego del número secreto!");
     asignar_texto('p',`Ingresa un número del 1 al ${numero_maximo}:`);
     numeroSecreto = generar_número();
     intentos = 1;
