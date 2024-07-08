@@ -1,6 +1,4 @@
-/*
 // DESAFIOS - CLASE 2: 
-
 // Número 1:
 function mensaje() {
     console.log("¡Hola Mundo!");
@@ -31,7 +29,6 @@ function valores(a,b,c) {
 
 valores(10,40,70);
 
-
 // Número 5:
 function mayor(a,b) {
     a = parseInt(prompt("Introduce un número"));
@@ -55,9 +52,7 @@ function cuadrado(number) {
 
 let multiplicar = cuadrado(10);
 console.log(multiplicar);
-*/
 
-/*
 // Calculadora de promedio y situación del alumno: 
 
 // PARTE 1 - Calcular promedio:
@@ -74,9 +69,6 @@ function verificar_aprobación(promedio) {
 }
 
 verificar_aprobación();
-*/
-
-/*
 
 // DESAFIOS - CLASE 3:
 // Número 1:
@@ -113,8 +105,7 @@ function conversion(dolares) {
 }
 
 conversion();
-*/
-/*
+
 // DESAFÍOS - CLASE 4: 
 // Número 1:
 let lista_generica = [];
@@ -229,7 +220,6 @@ function sumarListas(lista1, lista2) {
     return resultado;
 }
 
-// Ejemplo:
 let lista1 = [1, 2, 3, 4];
 let lista2 = [5, 6, 7, 8];
 let resultado = sumarListas(lista1, lista2);
