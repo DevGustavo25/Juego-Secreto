@@ -21,9 +21,9 @@ function verificar_intento() {
     } else {
         // Si el usuario no acertó: 
         if (numero_Usuario > numeroSecreto) {
-            asignar_texto('p', `El número secreto es menor. Tienes ${intentosMaximos} ${(intentosMaximos === 1) ? "intento!" : "intentos!"}`);
+            asignar_texto('p', `El número secreto es menor. Tienes ${intentosMaximos-1} ${(intentosMaximos === 1) ? "intento!" : "intentos!"}`);
         } else {
-            asignar_texto('p', `El número secreto es mayor. Tienes ${intentosMaximos} ${(intentosMaximos === 1) ? "intento!" : "intentos!"}`);
+            asignar_texto('p', `El número secreto es mayor. Tienes ${intentosMaximos-1} ${(intentosMaximos === 1) ? "intento!" : "intentos!"}`);
         }
         intentos++;
         intentosMaximos--;
