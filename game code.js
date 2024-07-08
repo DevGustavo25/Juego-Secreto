@@ -1,5 +1,6 @@
 let numeroSecreto = 0;
 let intentos = 1;
+let intentosMaximos = 4;
 let lista_numeros = [];
 let numero_maximo = 10;
 
@@ -20,12 +21,19 @@ function verificar_intento() {
     } else {
         // Si el usuario no acertó: 
         if (numero_Usuario > numeroSecreto) {
-            asignar_texto('p', "El número secreto es menor");
+            asignar_texto('p', `El número secreto es menor. Tienes ${intentosMaximos} ${(intentosMaximos === 1) ? "intento!" : "intentos!"}`);
         } else {
-            asignar_texto('p', "El número secreto es mayor");
+            asignar_texto('p', `El número secreto es mayor. Tienes ${intentosMaximos} ${(intentosMaximos === 1) ? "intento!" : "intentos!"}`);
         }
         intentos++;
+        intentosMaximos--;
         limpiar_campo();
+
+        // Limitando la cantidad de intentos:
+        if (intentosMaximos <= 0) {
+            asignar_texto('p', "Llegaste al número máximo de intentos");
+            document.getElementById('reiniciar').removeAttribute('disabled');
+        }
     }
     return;
 }
@@ -70,6 +78,7 @@ function condiciones_iniciales() {
     asignar_texto('p',`Indica un número del 1 al ${numero_maximo}`);
     numeroSecreto = generar_número();
     intentos = 1;
+    intentosMaximos = 4;
 }
 
 condiciones_iniciales();
