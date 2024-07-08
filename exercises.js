@@ -185,7 +185,7 @@ function suma_elementos(lista) {
 
 let numeros_3 = [10, 40, 30, 25];
 suma_elementos(numeros_3);  
-*/ 
+
 // Número 9:
 function posición_lista(lista, elemento) {
     elemento = parseInt(prompt("Ingrese un número:")); 
